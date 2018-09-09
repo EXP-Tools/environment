@@ -1,7 +1,6 @@
-# ENVIRONMENT-INSTALLER
-环境安装包
+# environment-installer
 
-> <b>在线下载页:&nbsp;</b>[[ Environment-Download ]](https://lyy289065406.github.io/environment/)
+> <b>环境安装包:&nbsp;</b>[[ Download-Page ]](https://lyy289065406.github.io/environment/)
 
 
 ## 版权声明
