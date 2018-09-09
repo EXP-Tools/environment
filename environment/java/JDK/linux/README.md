@@ -1,36 +1,36 @@
-linuxÍ¬Ê±°²×°64ºÍ86Î»jdk
+linuxåŒæ—¶å®‰è£…64å’Œ86ä½jdk
 
-1¡¢´´½¨JDKÄ¿Â¼
+1ã€åˆ›å»ºJDKç›®å½•
    mkdir /usr/java/x64
    mkdir /usr/java/x86
 
-2¡¢ÉÏ´«JDK°²×°°ü
+2ã€ä¸Šä¼ JDKå®‰è£…åŒ…
    /usr/java/x64/jdk-6u45-linux-x64.bin 
    /usr/java/x86/jdk-6u45-linux-i586.bin
 
-3¡¢ÊÚÈ¨Ö´ĞĞ
+3ã€æˆæƒæ‰§è¡Œ
    chmod u+x jdk-6u45-linux-x64.bin 
    chmod u+x jdk-6u45-linux-i586.bin
 
-4¡¢°²×°
+4ã€å®‰è£…
    ./jdk-6u45-linux-x64.bin 
    ./jdk-6u45-linux-i586.bin
 
-5¡¢ÉèÖÃÏµÍ³»·¾³±äÁ¿
+5ã€è®¾ç½®ç³»ç»Ÿç¯å¢ƒå˜é‡
    vi /etc/profile
 
-   Ä©Î²Ìí¼Ó
+   æœ«å°¾æ·»åŠ 
    export JAVA_HOME=/usr/java/x64/jdk1.6.0_45
    #export JAVA_HOME=/usr/java/x86/jdk1.6.0_45
    export CLASSPATH=.:${JAVA_HOME}/lib:${JAVA_HOME}/jre/lib  
    export PATH=${JAVA_HOME}/bin:$PATH
 
-6¡¢ÉèÖÃÈíÁ¬½Ó
+6ã€è®¾ç½®è½¯è¿æ¥
    ln -s /usr/java/x64/jdk1.6.0_45/bin/java  /usr/bin/java
    ln -s /usr/java/x64/jdk1.6.0_45/bin/javac  /usr/bin/javac
    ln -s /usr/java/x86/jdk1.6.0_45/bin/java  /usr/bin/java86
    ln -s /usr/java/x86/jdk1.6.0_45/bin/javac  /usr/bin/javac86
 
-7¡¢²é¿´°æ±¾
+7ã€æŸ¥çœ‹ç‰ˆæœ¬
    java -version
    java86 -version
