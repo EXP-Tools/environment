@@ -39,7 +39,7 @@
 <br/>　这时可以在DOS界面输入 `where java` 命令查看实际使用的jdk路径
 <br/>　会发现指向了【C:\Windows\System32\java.exe】
 <br/>　切到【C:\Windows\System32】目录后会发现有3个文件：java.exe、javaw.exe、javaws.exe
-<br/>　这时安装某个版本的JDK时自动复制的，他们的优先级比环境变量高，删除即可
+<br/>　这是安装某个版本的JDK时自动复制的，他们的优先级比环境变量高，删除即可
 
 ------
 
