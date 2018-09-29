@@ -16,6 +16,7 @@
 - 2.1.　在【系统变量】区域点击【新建】按钮
 - 2.2.　在【变量名】输入【JAVA_HOME】
 - 2.3.　在【变量值】输入【所安装的JDK路径】，如输入【C:\Program Files\Java\jdk1.7.0_72】
+<br/>　　　　但是有些程序不能识别路径中的空格，这里更建议使用特殊字符代替：【C:\Progra~1\Java\jdk1.7.0_72】
 - 2.4.　点击【确定】按钮
 - 2.5.　在【系统变量】区域点击【新建】按钮
 - 2.6.　在【变量名】输入【CLASSPATH】
@@ -30,8 +31,15 @@
 
 - 3.1.　【win+R】打开&quot;快速运行界面&quot;
 - 3.2.　输入【cmd】并点击【确认】按钮打开&quot;DOS界面&quot;
-- 3.3.　输入【java –version】，若显示Java版本信息则配置成功
+- 3.3.　输入 `java –version` ，若显示Java版本信息则配置成功
 
+> 注：
+<br/>　若同时安装了多个版本的JDK，但是发现无论怎么修改环境变量【%JAVA_HOME%】
+<br/>　都无法切换版本（即 `java –version` 得到的版本号总是相同的）
+<br/>　这时可以在DOS界面输入 `where java` 命令查看实际使用的jdk路径
+<br/>　会发现指向了【C:\Windows\System32\java.exe】
+<br/>　切到【C:\Windows\System32】目录后会发现有3个文件：java.exe、javaw.exe、javaws.exe
+<br/>　这时安装某个版本的JDK时自动复制的，他们的优先级比环境变量高，删除即可
 
 ------
 
