@@ -29,6 +29,9 @@ chmod u+x jdk-6u45-linux-i586.bin
 
 
 ### 5.　通过命令`vi /etc/profile`设置系统环境变量
+
+> 对于非 `*.bin` 格式的绿色解压包，直接从这一步开始执行即可
+
 ```
 # 在末尾添加
 export JAVA_HOME=/usr/java/x64/jdk1.6.0_45
